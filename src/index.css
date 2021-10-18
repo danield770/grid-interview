@@ -9,8 +9,8 @@ table {
   border-collapse: collapse;
 }
 
-td, th {
+td,
+th {
   border: 1px solid #eee;
   min-width: 50px;
-  padding: 2px 4px;
 }
