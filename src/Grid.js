@@ -14,7 +14,9 @@ const Grid = ({ config, data }) => (
       {data.map((data) => (
         <tr key={data.imdbID}>
           <td>{data[config[0].field]}</td>
-          <td>{data[config[1].field]}</td>
+          <td>
+            <span className='ellipsis'>{data[config[1].field]}</span>
+          </td>
           <td>{data[config[2].field]}</td>
           <td>
             {React.createElement(config[3].component, {
